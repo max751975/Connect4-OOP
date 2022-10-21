@@ -1,0 +1,114 @@
+/* game board table */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(to right, #70e1f5, #ffd194);
+}
+
+h1{
+  font-size:  5em;
+  margin: 10px auto;
+  width: 70%;
+  border: 2px solid black;
+  text-align: center;
+  font-family: 'Fugaz One', cursive;
+  background-image: url(https://cdn.pixabay.com/photo/2018/07/12/01/08/connect-4-3532328_960_720.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: rgb(133, 221, 217);
+  text-shadow: 4px 2px rgb(59, 48, 119);
+}
+#number {
+  font-size: 8rem;
+}
+
+#game {
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 200px;
+  height: 600px;
+}
+#board {
+  position: relative;
+  top: -40px;
+  background-color: rgba(247, 228, 205, 0.582);
+  border-radius: 10px;
+}
+
+#p1-color, #p2-color {
+  width: 40px;
+  height: 40px;
+  border: 2px double black;
+  border-style: outset;
+  margin:40px;
+  display: block;
+  position: relative;
+  left: 770px ;
+  top: 470px;
+  background-color: bisque;
+}
+
+
+#start-game {
+  position: absolute;
+  top: 250px;
+  left: 770px;
+  top: 380px;
+  height: 60px;
+  width: 300px;
+  background-color: crimson;
+  font-size: 2em ;
+  border-radius: 20px;
+}
+
+label {
+  position: relative;
+  top: 550px;
+  left: 540px;
+  font-size: 2em;
+  background-color: rgba(228, 211, 190, 0.452);
+  padding: 0 10px;
+}
+
+#board td {
+  width: 70px;
+  height: 70px;
+  border: solid 1px #666;
+  border-radius: 10px;
+  border-style: inset;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+}
+
+.piece.p1 {
+  background-color: red;
+}
+
+.piece.p2 {
+  background-color: blue;
+}
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: dashed 1px gray;
+  border-radius: 10px 10px 0 0;
+  background-color: rgba(0, 255, 255, 0.438);
+}
+
+#column-top td:hover {
+  background-color: gold;
+}
